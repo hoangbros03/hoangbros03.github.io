@@ -1,0 +1,330 @@
+@import "tailwindcss";
+
+/* ============================================================
+   COASTAL EDITORIAL — TIDAL RESEARCH DESIGN SYSTEM
+   "The Tidal Gallery" Design System Tokens
+   ============================================================ */
+
+@theme {
+  /* ----------------------------------------------------------
+     SURFACE PALETTE (Material 3 Tonal System)
+     ---------------------------------------------------------- */
+  --color-background: #f0f8ff;
+  --color-surface: #f0f8ff;
+
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #e6f2fc;
+  --color-surface-container: #def0fa;
+  --color-surface-container-high: #d6ebfa;
+  --color-surface-container-highest: #cce5f7;
+
+  /* ----------------------------------------------------------
+     PRIMARY (Ocean Blue — Coastal Editorial)
+     ---------------------------------------------------------- */
+  --color-primary: #006497;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #cce5ff;
+  --color-on-primary-container: #003e6b;
+  --color-primary-fixed: #9cd5ff;
+  --color-on-primary-fixed: #001e33;
+  --color-primary-fixed-dim: #5ec3ff;
+
+  /* ----------------------------------------------------------
+     SECONDARY (Seafoam / Slate)
+     ---------------------------------------------------------- */
+  --color-secondary: #a2c1de;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #d3e5f6;
+  --color-on-secondary-container: #183652;
+  --color-secondary-fixed: #d3e5f6;
+  --color-on-secondary-fixed: #072b49;
+  --color-secondary-fixed-dim: #a2c1de;
+
+  /* ----------------------------------------------------------
+     TERTIARY (Sandy Yellow — "Sunlight", use sparingly)
+     ---------------------------------------------------------- */
+  --color-tertiary: #e5b98f;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #ffdcbc;
+  --color-on-tertiary-fixed: #281804;
+  --color-tertiary-fixed: #ffdcbc;
+  --color-on-tertiary-fixed-variant: #5a4128;
+  --color-tertiary-fixed-dim: #eec89e;
+
+  /* Sandy Yellow (location tags in Travel Log) */
+  --color-sandy-yellow: #e8b851;
+
+  /* ----------------------------------------------------------
+     ON-SURFACE (Text & Icons — never pure black!)
+     ---------------------------------------------------------- */
+  --color-on-surface: #141c21;
+  --color-on-surface-variant: #434b52;
+  --color-on-background: #141c21;
+
+  /* ----------------------------------------------------------
+     OUTLINES & SURFACE VARIANTS
+     ---------------------------------------------------------- */
+  --color-outline: #7b8a96;
+  --color-outline-variant: #c3ced6;
+  --color-surface-variant: #dfe8f0;
+  --color-surface-tint: #0077be;
+  --color-surface-bright: #f0f8ff;
+  --color-surface-dim: #d0d9df;
+
+  /* ----------------------------------------------------------
+     INVERSE (Dark / Inverted contexts)
+     ---------------------------------------------------------- */
+  --color-inverse-surface: #2a3238;
+  --color-inverse-on-surface: #ebf1f6;
+  --color-inverse-primary: #5ec3ff;
+
+  /* ----------------------------------------------------------
+     ERROR
+     ---------------------------------------------------------- */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #410002;
+
+  /* ----------------------------------------------------------
+     BORDER RADIUS
+     Note: xl = 0.5rem (8px) — soft, not dramatic
+           full = 0.5rem — pills/chips (not full circle)
+     ---------------------------------------------------------- */
+  --radius-sm: 0.25rem;  /* 4px — tiny utility only */
+  --radius-md: 0.5rem;  /* 8px — standard */
+  --radius-lg: 0.75rem; /* 12px — cards, buttons */
+  --radius-xl: 1rem;    /* 16px — large cards */
+  --radius-2xl: 1.5rem; /* 24px — hero elements */
+  --radius-full: 0.5rem; /* 8px — chips/pills */
+
+  /* ----------------------------------------------------------
+     FONTS
+     ---------------------------------------------------------- */
+  --font-headline: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+  --font-label: var(--font-manrope), system-ui, sans-serif;
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: var(--font-body);
+    background-color: #fdfdfd;
+    color: #141c21;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: #fdfdfd;
+    color: #141c21;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Selection color */
+  ::selection {
+    background-color: rgba(0, 100, 151, 0.2);
+    color: #006497;
+  }
+
+  /* Custom scrollbar — coastal editorial feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e6f2fc;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c3ced6;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7b8a96;
+  }
+
+  /* Text selection uses accent color */
+  ::selection {
+    background-color: rgba(0, 100, 151, 0.18);
+    color: #003e6b;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+  }
+}
+
+/* ============================================================
+   CUSTOM UTILITIES
+   ============================================================ */
+
+@layer utilities {
+  /* Glassmorphism (Horizon Navigation) */
+  .glass {
+    background: rgba(240, 248, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* Ghost Border — fallback for form fields (20% opacity) */
+  .ghost-border {
+    outline: 1px solid rgba(163, 182, 195, 0.3);
+  }
+
+  /* Ghost Border Focus — for inputs on focus-within */
+  .ghost-border-focus:focus-within {
+    outline: 1px solid rgba(0, 100, 151, 0.4);
+  }
+
+  /* Tonal Gradient — Primary CTA backgrounds */
+  .tonal-gradient {
+    background: linear-gradient(135deg, #006497 0%, #003e6b 100%);
+  }
+
+  /* Oceanic Shadow — for floating Action Buttons only */
+  .oceanic-shadow {
+    box-shadow: 0 0 32px rgba(20, 28, 33, 0.06);
+  }
+
+  /* Horizon Nav — gradient fade into content */
+  .nav-fade {
+    background: linear-gradient(
+      180deg,
+      rgba(240, 248, 255, 0.9) 0%,
+      rgba(240, 248, 255, 0.6) 80%,
+      transparent 100%
+    );
+    backdrop-filter: blur(20px);
+  }
+
+  /* No-line divider alternative: tonal shift via spacing */
+  .tonal-divider {
+    height: 1px;
+    background-color: #c3ced6;
+    opacity: 0.4;
+    border-radius: 9999px;
+  }
+
+  /* Card tonal lift — hover */
+  .card-lift {
+    transition: transform 300ms ease, box-shadow 300ms ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 32px rgba(20, 28, 33, 0.06);
+  }
+
+  /* Image zoom on hover (used in travel cards) */
+  .img-zoom {
+    transition: transform 700ms ease;
+  }
+  .img-zoom:hover {
+    transform: scale(1.05);
+  }
+
+  /* Image zoom on group-hover */
+  .group:hover .img-zoom-target {
+    transform: scale(1.05);
+  }
+
+  /* Button press effect */
+  .press-effect {
+    transition: transform 300ms ease;
+  }
+  .press-effect:active {
+    transform: scale(0.95);
+  }
+
+  /* Heading tight letter-spacing (editorial feel) */
+  .tracking-tight {
+    letter-spacing: -0.02em;
+  }
+
+  /* Uppercase label tracking (section labels) */
+  .tracking-widest {
+    letter-spacing: 0.1em;
+  }
+
+  /* Ambient glow backdrop */
+  .glow-primary {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 100, 151, 0.1) 0%,
+      transparent 70%
+    );
+  }
+
+  .glow-secondary {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(212, 229, 246, 0.5) 0%,
+      transparent 70%
+    );
+  }
+
+  /* Text gradient overlay for hero images */
+  .text-gradient-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      transparent 100%
+    );
+  }
+
+  /* Masonry grid columns */
+  .masonry-grid {
+    columns: 1;
+    column-gap: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    .masonry-grid {
+      columns: 2;
+    }
+  }
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      columns: 3;
+    }
+  }
+
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Line clamp utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Focus ring disabled — use ghost border instead */
+  .focus-ring-ghost {
+    outline: none;
+  }
+  .focus-ring-ghost:focus-visible {
+    outline: 1px solid rgba(0, 100, 151, 0.4);
+    border-radius: 0.5rem;
+  }
+}
