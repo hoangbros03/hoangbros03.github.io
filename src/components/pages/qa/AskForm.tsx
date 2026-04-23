@@ -3,7 +3,11 @@ import { useState } from "react";
 import { Textarea } from "@/components/ui/Textarea";
 import { Button } from "@/components/ui/Button";
 
-export function AskForm() {
+interface AskFormProps {
+  dictionary: any;
+}
+
+export function AskForm({ dictionary }: AskFormProps) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -44,10 +48,10 @@ export function AskForm() {
       <div className="py-4 text-center animate-in fade-in slide-in-from-bottom-4 duration-500">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-bold mb-2">
           <span className="material-symbols-outlined text-sm">check_circle</span>
-          Question Queued
+          {dictionary.forms.ask.successTitle}
         </div>
         <p className="text-on-surface-variant text-sm font-[family-name:var(--font-manrope)]">
-          Your anonymous inquiry has been sent to my email inbox for review.
+          {dictionary.forms.ask.successMessage}
         </p>
       </div>
     );
@@ -60,17 +64,17 @@ export function AskForm() {
     >
       <Textarea
         name="anonymous-question"
-        label="SYSTEM PROMPT / QUESTION"
-        placeholder="What's your take on the future of autonomous agent orchestration?"
+        label={dictionary.forms.ask.label}
+        placeholder={dictionary.forms.ask.placeholder}
         rows={3}
         required
       />
       {status === "error" && (
-        <p className="text-error text-xs font-medium">Transmission error. Please try again.</p>
+        <p className="text-error text-xs font-medium">{dictionary.forms.ask.errorMessage}</p>
       )}
       <div className="flex justify-between items-center">
         <span className="text-xs text-on-surface-variant flex items-center gap-2 font-[family-name:var(--font-manrope)]">
-          <span>🔒</span> IDENTITY PROTECTED (ANONYMOUS)
+          <span>🔒</span> {dictionary.forms.ask.anonymousLabel}
         </span>
         <Button 
           variant="primary" 
@@ -78,7 +82,7 @@ export function AskForm() {
           type="submit"
           isLoading={status === "loading"}
         >
-          {status === "loading" ? "Queuing..." : "Submit Question"}
+          {status === "loading" ? dictionary.forms.ask.loading : dictionary.forms.ask.submit}
         </Button>
       </div>
     </form>

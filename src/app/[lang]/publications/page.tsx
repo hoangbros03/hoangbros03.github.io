@@ -3,92 +3,8 @@ import { Card } from "@/components/ui/Card";
 import { Chip } from "@/components/ui/Chip";
 import { Badge } from "@/components/ui/Badge";
 import { Icon } from "@/components/ui/Icon";
-
-interface PublicationLink {
-  label: string;
-  icon: string;
-  href: string;
-}
-
-interface Publication {
-  year: string;
-  conference?: string;
-  conferenceVariant?: "default" | "primary" | "sandy";
-  typeLabel: string;
-  publisher?: string;
-  title: string;
-  description: string;
-  links: PublicationLink[];
-  image?: {
-    src: string;
-    alt: string;
-  };
-}
-
-const publications: Publication[] = [
-  {
-    year: "2025",
-    conference: "ACM Multimedia (A*)",
-    conferenceVariant: "primary",
-    typeLabel: "Conference Paper",
-    publisher: "Association for Computing Machinery",
-    title:
-      "MUDI: A Multimodal Biomedical Dataset for Understanding Pharmacodynamic Drug-Drug Interactions",
-    description:
-      "Establishing a new Multimodal Biomedical Dataset (MUDI) and proposing diverse multimodal fusion strategies for Drug-Drug Interaction extraction. Presented at the top-tier 33rd ACM International Conference on Multimedia.",
-    links: [
-      { label: "arXiv", icon: "description", href: "https://arxiv.org/abs/2506.01478" },
-      { label: "Paper", icon: "article", href: "https://arxiv.org/abs/2506.01478" },
-    ],
-    image: {
-      src: "/publishers/acm.png",
-      alt: "ACM publisher logo",
-    },
-  },
-  {
-    year: "2025",
-    conference: "JBI (Q1)",
-    conferenceVariant: "primary",
-    typeLabel: "Journal Article",
-    publisher: "Elsevier",
-    title:
-      "Comprehensive Analysis of Multimodal Drug-Drug Interaction Extraction Using Diverse Fusion Strategies",
-    description:
-      "Published in the Journal of Biomedical Informatics. A deep dive into attention-based and multimodal fusion techniques for identifying complex pharmacological interactions.",
-    links: [
-      { label: "DOI", icon: "article", href: "https://doi.org/10.1016/j.jbi.2025.104874" },
-    ],
-    image: {
-      src: "/publishers/elsevier.svg",
-      alt: "Elsevier publisher logo",
-    },
-  },
-  {
-    year: "2024",
-    conference: "BME 2024",
-    conferenceVariant: "default",
-    typeLabel: "Conference Paper",
-    publisher: "Springer Nature",
-    title: "Improving Drug-Drug Interaction Extraction from Biomedical Literature using Deep Multimodal Fusion",
-    description:
-      "Oral presentation at BME 2024. Focused on leveraging deep multimodal fusion to enhance the accuracy of DDI extraction from unstructured scientific text.",
-    links: [{ label: "DOI", icon: "description", href: "https://doi.org/10.1007/978-3-031-90194-2_36" }],
-    image: {
-      src: "/publishers/springer-nature.svg",
-      alt: "Springer Nature publisher logo",
-    },
-  },
-];
-
-// Group publications by year
-const groupedPublications = publications.reduce(
-  (acc, pub) => {
-    if (!acc[pub.year]) acc[pub.year] = [];
-    acc[pub.year].push(pub);
-    return acc;
-  },
-  {} as Record<string, Publication[]>
-);
+import { getDictionary, Locale } from "@/lib/get-dictionary";
+import { Publication } from "@/lib/types";
 
 function PublicationCard({ pub }: { pub: Publication }) {
   const primaryLink = pub.links[0]?.href;
@@ -165,21 +81,36 @@ function PublicationCard({ pub }: { pub: Publication }) {
   );
 }
 
-export default function PublicationsPage() {
+export default async function PublicationsPage(props: {
+  params: Promise<{ lang: string }>;
+}) {
+  const params = await props.params;
+  const lang = params.lang as Locale;
+  const dict = await getDictionary(lang);
+
+  // Group publications by year
+  const groupedPublications = (dict.publications.items as Publication[]).reduce(
+    (acc: Record<string, Publication[]>, pub: Publication) => {
+      if (!acc[pub.year]) acc[pub.year] = [];
+      acc[pub.year].push(pub);
+      return acc;
+    },
+    {} as Record<string, Publication[]>
+  );
+
   return (
     <main className="pb-20 px-8 max-w-7xl mx-auto">
       {/* Hero Section */}
       <section className="mb-24">
         <div className="inline-block px-3 py-1 bg-surface-container-low text-primary font-label text-xs tracking-widest mb-6 border border-primary/10 rounded-lg uppercase">
-            Scholarly Archive
+            {dict.publications.header.label}
           </div>
         <div className="flex flex-col gap-4">
           <h1 className="font-[family-name:var(--font-space-grotesk)] text-5xl md:text-7xl font-bold tracking-tight max-w-4xl text-on-surface">
-            Publications &amp; Research
+            {dict.publications.header.title}
           </h1>
           <p className="text-on-surface-variant text-lg max-w-2xl mt-4 leading-relaxed">
-            Exploring the intersection of multimodal intelligence and complex biological
-            systems through peer-reviewed academic rigor.
+            {dict.publications.header.description}
           </p>
         </div>
       </section>
@@ -188,7 +119,7 @@ export default function PublicationsPage() {
       <div className="flex flex-col gap-12">
         {Object.entries(groupedPublications)
           .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
-          .map(([year, pubs]) => (
+          .map(([year, pubs]: [string, Publication[]]) => (
             <section key={year}>
             {/* Year heading + divider */}
             <div className="flex items-center gap-6 mb-8">
@@ -198,7 +129,7 @@ export default function PublicationsPage() {
 
             {/* Publication cards */}
             <div className="grid grid-cols-1 gap-6">
-              {pubs.map((pub, idx) => (
+              {pubs.map((pub: Publication, idx: number) => (
                 <PublicationCard key={idx} pub={pub} />
               ))}
             </div>

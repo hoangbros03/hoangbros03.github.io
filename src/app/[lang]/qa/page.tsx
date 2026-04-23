@@ -1,8 +1,14 @@
 import { Card } from "@/components/ui/Card";
-import { Chip } from "@/components/ui/Chip";
 import { AskForm } from "@/components/pages/qa/AskForm";
+import { getDictionary, Locale } from "@/lib/get-dictionary";
 
-export default function QAPage() {
+export default async function QAPage(props: {
+  params: Promise<{ lang: string }>;
+}) {
+  const params = await props.params;
+  const lang = params.lang as Locale;
+  const dict = await getDictionary(lang);
+
   return (
     <>
       {/* Decorative Backdrop */}
@@ -15,11 +21,10 @@ export default function QAPage() {
         {/* Hero Section */}
         <header className="mb-16">
           <h1 className="font-[family-name:var(--font-space-grotesk)] text-5xl md:text-6xl font-bold tracking-tight text-on-surface mb-4">
-            Q&amp;A — <span className="text-primary">Ask Me Anything</span>
+            {dict.qa.header.title}
           </h1>
           <p className="text-on-surface-variant text-lg max-w-2xl leading-relaxed font-[family-name:var(--font-manrope)]">
-            A public feed of anonymous questions and your published answers.
-            Explore technical inquiries, career advice, and AI exploration.
+            {dict.qa.header.description}
           </p>
         </header>
 
@@ -29,12 +34,10 @@ export default function QAPage() {
             {/* Decorative Glow */}
             <div className="absolute -top-24 -right-24 w-48 h-48 bg-primary/20 blur-[80px] rounded-full" />
             <div className="relative z-10">
-              <AskForm />
+              <AskForm dictionary={dict} />
             </div>
           </Card>
         </section>
-
-
       </main>
     </>
   );

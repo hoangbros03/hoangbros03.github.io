@@ -4,7 +4,11 @@ import { useState } from "react";
 import { Textarea } from "@/components/ui/Textarea";
 import { Button } from "@/components/ui/Button";
 
-export function InquiryForm() {
+interface InquiryFormProps {
+  dictionary: any;
+}
+
+export function InquiryForm({ dictionary }: InquiryFormProps) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -46,8 +50,8 @@ export function InquiryForm() {
         <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
           <span className="material-symbols-outlined text-primary text-3xl">check_circle</span>
         </div>
-        <h3 className="text-xl font-bold mb-2">Query Transmitted</h3>
-        <p className="text-on-surface-variant">Your inquiry has been sent to my inbox.</p>
+        <h3 className="text-xl font-bold mb-2">{dictionary.forms.inquiry.successTitle}</h3>
+        <p className="text-on-surface-variant">{dictionary.forms.inquiry.successMessage}</p>
       </div>
     );
   }
@@ -56,13 +60,13 @@ export function InquiryForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <Textarea
         name="question"
-        label="SYSTEM PROMPT / QUESTION"
-        placeholder="Explain the role of attention masks in sparse transformer architectures..."
+        label={dictionary.forms.inquiry.label}
+        placeholder={dictionary.forms.inquiry.placeholder}
         rows={4}
         required
       />
       {status === "error" && (
-        <p className="text-error text-xs font-medium">Failed to send. Please try again or contact me directly.</p>
+        <p className="text-error text-xs font-medium">{dictionary.forms.inquiry.errorMessage}</p>
       )}
       <Button 
         variant="primary" 
@@ -72,7 +76,7 @@ export function InquiryForm() {
         type="submit"
         isLoading={status === "loading"}
       >
-        {status === "loading" ? "Transmitting..." : "Execute Query"}
+        {status === "loading" ? dictionary.forms.inquiry.loading : dictionary.forms.inquiry.submit}
       </Button>
     </form>
   );

@@ -1,0 +1,443 @@
+{
+  "navigation": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "publications": "Publications",
+    "achievements": "Achievements",
+    "blog": "Blog",
+    "qa": "Q&A",
+    "connect": "Connect"
+  },
+  "footer": {
+    "tagline": "AI Engineer & Researcher",
+    "copyright": "© {year} Ba-Hoang Tran."
+  },
+  "common": {
+    "multimodal": "Multimodal",
+    "research": "Research",
+    "bringingSoon": "Bringing it soon"
+  },
+  "home": {
+    "hero": {
+      "role": "AI Engineer & Researcher",
+      "title": "I'm Ba-Hoang Tran.",
+      "subtitle": "Advancing Multimodal Intelligence.",
+      "description": [
+        "AI Engineer at VinSmart Future (Speech & AI Agents)",
+        "Incoming M2 at Université Paris-Saclay. B.S. in Computer Science (High Distinction), VNU-UET.",
+        "Specializing in Agentic Systems, GraphRAG, and On-Device SLM",
+        "Researching Multimodal Learning for Healthcare AI"
+      ],
+      "viewExperience": "View Experience",
+      "getCV": "Get CV",
+      "projects": "Projects",
+      "alt": "Tran Ba Hoang - AI Engineer & Researcher"
+    },
+    "publications": {
+      "label": "Curated Works",
+      "title": "Selected Publications",
+      "viewAll": "View All Papers"
+    },
+    "experience": {
+      "label": "Professional Journey",
+      "title": "Work Experience",
+      "viewAll": "Full Career Path"
+    },
+    "achievements": {
+      "label": "Recognition & Impact",
+      "title": "Honors & Awards",
+      "viewAll": "All Achievements"
+    },
+    "projects": {
+      "label": "Featured Explorations",
+      "title": "Personal Projects",
+      "viewAll": "View All Projects",
+      "viewGithub": "View on GitHub"
+    },
+    "blog": {
+      "label": "Digital Garden",
+      "title": "Writings & Insights",
+      "description": "Thoughts on AI architecture, research breakthroughs, and the intersection of technology and human experience.",
+      "comingSoon": "Coming Soon"
+    },
+    "qa": {
+      "title": "Direct Inquiry",
+      "description": "Ask a question for me. Alternatively, you can also reach out via email at hoangtb203@gmail.com"
+    }
+  },
+  "experience": {
+    "header": {
+      "label": "Career & Education",
+      "title": "Journey.",
+      "description": "Advancing AI through engineering excellence and academic research, from multimodal biomedical datasets to on-device agentic systems."
+    },
+    "work": {
+      "title": "Work Experience",
+      "achievementsLabel": "Key Achievements",
+      "items": [
+        {
+          "company": "Vin Smart Future",
+          "logo": "/companies/vin-logo.svg",
+          "logoAlt": "Vin logo",
+          "role": "AI Engineer",
+          "period": "Feb 2026 — Present",
+          "description": "Speech & AI Agent components for VinFast's virtual assistant.",
+          "achievements": [
+            "Engineered performance optimizations for real-time driver interactions.",
+            "Architecting offline SLM deployment on Qualcomm-based vehicle hardware.",
+            "Optimizing system design for high-reliability without cloud dependency."
+          ],
+          "tags": ["Speech AI", "SLM", "On-Device", "VinFast"]
+        },
+        {
+          "company": "Sun* Inc.",
+          "logo": "/companies/sun-asterisk.png",
+          "logoAlt": "Sun Asterisk logo",
+          "role": "AI Engineer",
+          "period": "June 2025 — January 2026",
+          "description": "AI-Powered Insight Automation & Sun* Assistant project.",
+          "achievements": [
+            "Architected high-throughput inference pipeline (Whisper + vLLM) reducing processing time by 65%.",
+            "Engineered GraphRAG indexing system using advanced parsing & chunking mechanisms.",
+            "Implemented AI Agents with persistent memory reducing staff inquiries by 70%."
+          ],
+          "tags": ["GraphRAG", "vLLM", "Triton", "Agentic Systems"]
+        },
+        {
+          "company": "DS&KTLab - VNU UET",
+          "logo": "/companies/uet.png",
+          "logoAlt": "VNU University of Engineering and Technology logo",
+          "role": "Undergraduate Research Assistant",
+          "period": "Feb 2023 — June 2025",
+          "description": "Leading research on drug-drug interaction extraction using multimodal approaches.",
+          "achievements": [
+            "Authored 3 peer-reviewed publications, including ACM Multimedia (A*) and JBI (Q1).",
+            "Established a new Multimodal Biomedical Dataset (MUDI).",
+            "Best Thesis Award from Thesis Defense Committee (Score: 9.7/10)."
+          ],
+          "tags": ["Multimodal AI", "Biomedical NLP", "Research", "ACM MM"]
+        },
+        {
+          "company": "Cinnamon AI",
+          "logo": "/companies/cinnamon.webp",
+          "logoAlt": "Cinnamon AI logo",
+          "role": "AI Researcher Intern",
+          "period": "June 2023 — March 2024",
+          "description": "Robust Table Structure Detection & Clinical Data Extraction.",
+          "achievements": [
+            "Improved table reconstruction accuracy by 27% for partially missing borders.",
+            "Fine-tuned models for clinical data extraction from unstructured health records.",
+            "Collaborated on practical AI solutions for international clients."
+          ],
+          "tags": ["Computer Vision", "Table Recognition", "Clinical AI"]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "school": "Université Paris-Saclay",
+          "degree": "Master 2 in Data, Knowledge and Hybrid AI",
+          "period": "Sept 2026 - July 2027 (Incoming)",
+          "details": "Incoming student. Admitted to the this prestigious Master 2 program at Université Paris-Saclay."
+        },
+        {
+          "school": "Vietnam National University - UET",
+          "degree": "Bachelor of Computer Science (Honors)",
+          "period": "2021 - 2025",
+          "details": "GPA: 3.61/4. Best Thesis Award recipient."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "header": {
+      "label": "Project Portfolio",
+      "title": "Featured Projects.",
+      "description": "A selection of technical projects ranging from real-time agentic systems to specialized model optimization and translation."
+    },
+    "technicalFocus": "Technical Focus",
+    "viewSource": "View Source",
+    "items": [
+      {
+        "id": "voice-chat",
+        "title": "AI Voice Chat Assistant",
+        "category": "LLMs & Agentic Systems",
+        "period": "Jan 2026",
+        "description": "Low-latency conversational AI featuring real-time voice synthesis and multi-agent workflows using LangGraph and MCP.",
+        "achievements": [
+          "Integrated Superlinked for high-dimensional vector embeddings.",
+          "Architected multi-turn dialogue handling with persistent memory.",
+          "Optimized for real-time interactive response rates."
+        ],
+        "tech": ["LangGraph", "MCP", "Superlinked", "Python"],
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByCe2y1APIjcA5woQcQBjyc1HNQwhjwbNjDpZNgma0umEFwoPk63ocCQM7dP-LQ8zNjZ9euvctLC7B5SkZyR55a22WObmybY2c4GsZ8jn38kksXF2fF4UYy7YvDMqZgQ6SViizIqFcIHCoUTVMpPO-hRoMzrLYzUj_xn7YqAvkH8CTP69Wr-11vyIPR-W1mShQRh2xyfB7ZQCFkxiU-rT6sBmFv7w7s2H_H8zkuILS4zyX9MPgNrrtNVAKOazXE9H80dhs0uVSKJY",
+        "github": "https://github.com/hoangbros03/voice-chat-demo"
+      },
+      {
+        "id": "translation-model",
+        "title": "Laos-Viet Translation Model",
+        "category": "NLP",
+        "period": "Dec 2023",
+        "description": "High-accuracy translation system improving BLEU score by 36% from baseline. Awarded Best NLP Class Project.",
+        "achievements": [
+          "Customized Transformer architecture for low-resource language pairs.",
+          "Crawled and processed public data to expand the training corpus.",
+          "Implemented advanced decoding strategies to improve translation quality."
+        ],
+        "tech": ["PyTorch", "Transformers", "BLEU", "NLP"],
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA8DdKa62FjJqGfIqCB6xO_1oEtCVH3j9u1BEGBZL63JyvGxXarAL-SvenDr5DdR7HaWuzYkwspGSqPz3AhpRJMpHwgodQnMQWeTxRKovtgU6H4Y0vfKSf12s7kAJyblkCgNuKEuMIRN7a3RdkCnVLJ69YnMatkVuv4HUQ9Xw7yITHUZMiT6r6G9bK5PKWZaNKyDjs_-NCCCScGKavC9dt6V0p9aPn-016EM99gRkCX3e_0LkQeBEYTgPOkcaa7RgCjd7gsH1uVhns",
+        "github": "https://github.com/hoangbros03/Translation_Model_10"
+      },
+      {
+        "id": "gan-implement",
+        "title": "Image Generation using GAN",
+        "category": "Generative AI",
+        "period": "Nov 2023",
+        "description": "Re-implemented GAN from scratch with advanced training methods, achieving 20% faster convergence.",
+        "achievements": [
+          "Reduced training epochs by 20% using advanced optimization.",
+          "Achieved FID score of 0.0285.",
+          "Conducted thorough ablation studies on architecture components."
+        ],
+        "tech": ["PyTorch", "GANs", "Computer Vision"],
+        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop",
+        "github": "https://github.com/hoangbros03/GAN-implement"
+      },
+      {
+        "id": "model-compression",
+        "title": "Model Compression",
+        "category": "Efficiency",
+        "period": "July 2023",
+        "description": "Reduced VGG16 model size by 76% with minimal error increase using quantization and pruning.",
+        "achievements": [
+          "Achieved significant size reduction for edge deployment.",
+          "Maintained top-5 error within 0.0586 margin.",
+          "Evaluated performance across various pruning ratios."
+        ],
+        "tech": ["PyTorch", "Quantization", "Pruning", "Distillation"],
+        "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1932&auto=format&fit=crop",
+        "github": "https://github.com/hoangbros03/pytorch-cifar100"
+      }
+    ]
+  },
+  "publications": {
+    "header": {
+      "label": "Scholarly Archive",
+      "title": "Publications & Research",
+      "description": "Exploring the intersection of multimodal intelligence and complex biological systems through peer-reviewed academic rigor."
+    },
+    "items": [
+      {
+        "year": "2025",
+        "conference": "ACM Multimedia (A*)",
+        "conferenceVariant": "primary",
+        "typeLabel": "Conference Paper",
+        "publisher": "Association for Computing Machinery",
+        "title": "MUDI: A Multimodal Biomedical Dataset for Understanding Pharmacodynamic Drug-Drug Interactions",
+        "description": "Establishing a new Multimodal Biomedical Dataset (MUDI) and proposing diverse multimodal fusion strategies for Drug-Drug Interaction extraction. Presented at the top-tier 33rd ACM International Conference on Multimedia.",
+        "links": [
+          { "label": "arXiv", "icon": "description", "href": "https://arxiv.org/abs/2506.01478" },
+          { "label": "Paper", "icon": "article", "href": "https://arxiv.org/abs/2506.01478" }
+        ],
+        "image": {
+          "src": "/publishers/acm.png",
+          "alt": "ACM publisher logo"
+        }
+      },
+      {
+        "year": "2025",
+        "conference": "JBI (Q1)",
+        "conferenceVariant": "primary",
+        "typeLabel": "Journal Article",
+        "publisher": "Elsevier",
+        "title": "Comprehensive Analysis of Multimodal Drug-Drug Interaction Extraction Using Diverse Fusion Strategies",
+        "description": "Published in the Journal of Biomedical Informatics. A deep dive into attention-based and multimodal fusion techniques for identifying complex pharmacological interactions.",
+        "links": [
+          { "label": "DOI", "icon": "article", "href": "https://doi.org/10.1016/j.jbi.2025.104874" }
+        ],
+        "image": {
+          "src": "/publishers/elsevier.svg",
+          "alt": "Elsevier publisher logo"
+        }
+      },
+      {
+        "year": "2024",
+        "conference": "BME 2024",
+        "conferenceVariant": "default",
+        "typeLabel": "Conference Paper",
+        "publisher": "Springer Nature",
+        "title": "Improving Drug-Drug Interaction Extraction from Biomedical Literature using Deep Multimodal Fusion",
+        "description": "Oral presentation at BME 2024. Focused on leveraging deep multimodal fusion to enhance the accuracy of DDI extraction from unstructured scientific text.",
+        "links": [{ "label": "DOI", "icon": "description", "href": "https://doi.org/10.1007/978-3-031-90194-2_36" }],
+        "image": {
+          "src": "/publishers/springer-nature.svg",
+          "alt": "Springer Nature publisher logo"
+        }
+      }
+    ]
+  },
+  "achievements": {
+    "header": {
+      "label": "Recognition & Impact",
+      "title": "Honors & Leadership.",
+      "description": "A track record of academic excellence, competitive success in global hackathons, and leadership within the technical community."
+    },
+    "honors": {
+      "title": "Major Awards & Honors",
+      "items": [
+        {
+          "title": "DAAD Study Scholarship for STEM Disciplines",
+          "org": "German Academic Exchange Service (DAAD)",
+          "date": "April 2026",
+          "description": "Full-ride Master's scholarship for graduate study in Germany. Awarded to a limited number of high-potential students in STEM.",
+          "highlight": "Full-ride Scholarship"
+        },
+        {
+          "title": "University-level Scientific Research Conference",
+          "org": "Vietnam National University",
+          "date": "May 2025",
+          "description": "Awarded Second Prize among top research projects across all faculties for work on multimodal drug-drug interaction prediction.",
+          "highlight": "Second Prize"
+        },
+        {
+          "title": "International Quant Championship",
+          "org": "WorldQuant",
+          "date": "July 2024",
+          "description": "Achieved Top 2 university-level team globally. Developed innovative financial modeling strategies demonstrating strong predictive power.",
+          "highlight": "Global Top 2 Team"
+        },
+        {
+          "title": "Back2school KMS Scholarship",
+          "org": "KMS Technology",
+          "date": "October 2024",
+          "description": "Selected as an outstanding student through a competitive process with a 3.8% acceptance rate.",
+          "highlight": "Top 3.8%"
+        },
+        {
+          "title": "VPBank Hackathon Technology",
+          "org": "VPBank",
+          "date": "May 2024",
+          "description": "Top 5 in the Talent Acquisition Search Application Challenge using RAG and customized LLM pipelines.",
+          "highlight": "Top 5"
+        }
+      ]
+    },
+    "leadership": {
+      "title": "Leadership & Activities",
+      "items": [
+        {
+          "role": "Team Leader / AI Engineer",
+          "event": "Swin Hackathon 2024",
+          "date": "Sept 2024",
+          "description": "Led a team to develop a system generating documents and slides from concepts, reducing workload by 98%. Top 10 finish."
+        },
+        {
+          "role": "Lecturer & Team Mentor",
+          "event": "FACT Program (SUTD & VNU-UET)",
+          "date": "July 2023",
+          "description": "Delivered lectures on deep learning concepts to first-year students and mentored soil moisture estimation projects."
+        },
+        {
+          "role": "Organizer / Media Lead",
+          "event": "UET Presentation Club",
+          "date": "2021 - 2024",
+          "description": "Managed social media campaigns and organized large-scale student events, boosting reach by 10% annually."
+        },
+        {
+          "role": "Delegate",
+          "event": "National Conference on Science & Innovation",
+          "date": "Jan 2025",
+          "description": "Selected as one of 40 excellent students to attend this national-level conference on digital transformation."
+        }
+      ]
+    }
+  },
+  "blog": {
+    "header": {
+      "label": "Writing Desk",
+      "title": "Blog is coming soon.",
+      "description": "I'm preparing essays and technical notes on research, engineering, and real-world AI systems. The first posts are not published yet."
+    }
+  },
+  "qa": {
+    "header": {
+      "title": "Q&A — Ask Me Anything",
+      "subtitle": "Ask Me Anything",
+      "description": "A public feed of anonymous questions and your published answers. Explore technical inquiries, career advice, and AI exploration."
+    }
+  },
+  "forms": {
+    "inquiry": {
+      "successTitle": "Query Transmitted",
+      "successMessage": "Your inquiry has been sent to my inbox.",
+      "label": "SYSTEM PROMPT / QUESTION",
+      "placeholder": "Explain the role of attention masks in sparse transformer architectures...",
+      "errorMessage": "Failed to send. Please try again or contact me directly.",
+      "loading": "Transmitting...",
+      "submit": "Execute Query"
+    },
+    "ask": {
+      "successTitle": "Question Queued",
+      "successMessage": "Your anonymous inquiry has been sent to my email inbox for review.",
+      "label": "SYSTEM PROMPT / QUESTION",
+      "placeholder": "What's your take on the future of autonomous agent orchestration?",
+      "errorMessage": "Transmission error. Please try again.",
+      "anonymousLabel": "IDENTITY PROTECTED (ANONYMOUS)",
+      "loading": "Queuing...",
+      "submit": "Submit Question"
+    }
+  },
+  "travel": {
+    "header": {
+      "title": "Travel Log",
+      "description": "The highly visual masonry grid of my trips, natively supporting multi-language markdown files."
+    },
+    "readLog": "READ LOG",
+    "discoverMore": "Discover More Modules",
+    "items": [
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGTBmpOsBs80FgXyq9BipDu829ThXCdCokZIwKHrj8pu4thShUAXyLOfkHHZkK4viag_aGAPP5ML4wgIS-34RIQwnGAdJuko2IrN23miR5e5Xucif4JDEnrKJ-AcT0kDsES_O4zREJsK-DwFn6rFgsEkvDcvkSHs6t-vnfm7rpaRUS9DprwNCLf90h92xVZVaYP4_bVBv_CGNOd0kIQ_dvooye_hBZLtOKOazaTVemAiHF4kB_xC7D6aTeJa3Aj9FgM9j-T_lhW7k",
+        "location": "Kyoto, Japan",
+        "season": "Autumn 2024",
+        "title": "Synthesizing Tradition & Silicon",
+        "description": "Exploring the intersection of ancient craftsmanship and modern tech infrastructure in the heart of Japan's cultural capital.",
+        "aspect": "aspect-[3/4]"
+      },
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBQjkfSuea5HlCHINXTtWD3FUYtFmYon3llpjRn22y897EJZ15mWncEbu79MNXPkb1Q5yWxF_ajxZeVHTSD3b1v5zxf67PwJ65cR_XtHcG51y8Y9bMD3lJcEKXFW-GWS38N7RMpLNu9IWgcpw3kWqjNjDs5ac8MHiIc0wDEbuqXjzoSOqETK16neXJJNC4DNom6orA-Zt_IPdnfpp4qStaFYaEXiW-PSkJ4Mt5qIPECcdaLLqGePQN3c8m7ZlNcUsuYhjYG8k-EAhE",
+        "location": "Switzerland",
+        "season": "Winter 2023",
+        "title": "Peak Focus",
+        "description": "Isolating the noise. A deep-work retreat among the high-altitude landscapes of the Bernese Oberland.",
+        "aspect": "aspect-video"
+      },
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDxTaCmPeO9Mf1zmogUPN7lwHVcOXQY4a4eL37VvJSYYJuzpU5fEt8ovDCj9c2FXCD8CJFf3okCMC8KHTqn-G9iv83YbcGhAQs0UQRPV113955RknnYeogehkHnRQVFvT3PhgOE1VxOjMP3zslhBYglK4_r5jGwFh7AxArCImC84PRbdYVPEQce-9K7nvNxl_D4gMutC7l4jE5JsNk_BI1ekTAwLF7VMsNx2FfVx5x75uitXdUhvHDt3fBhgt4Mf6rOVKHc6d10-vY",
+        "location": "San Francisco",
+        "season": "Spring 2024",
+        "title": "Urban Nodes",
+        "description": "A photographic study of the physical infrastructure powering the generative AI boom.",
+        "aspect": "aspect-square"
+      },
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBWh3dUXUPwoIu7So0bdNET49T4o1AORnHCF1eMMan5arYAc_uMn5HrcS52t1QWNuG1DXWtd0YXn5kBNUASZr63M9a73rWNgpdtY3jxh6lyuYe9aWODpqIo9VX2ceyLFfER1NL4sC33v1goeqTTms1jmMKBjTJTcPrr5YknPG5VfV_dM0_xm19uVRYIEYbIVPv7z-ssNRfxE6_fXootKN5RcGQSzM9IOgte7NyXqkHYOdbir70vtDY9sJPN-n04e3E-VKUlUXgARg",
+        "location": "Denmark",
+        "season": "Summer 2024",
+        "title": "The Logic of Design",
+        "description": "Systematic aesthetics and functional minimalism in the Nordic urban landscape.",
+        "aspect": "aspect-[4/5]"
+      },
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuA0Trh8aPyp6w24b3sSiaS-x3n6PqbPliAHADPFdg0_4cM2M5XXMH631edQqtjgpAxl5T8zWQwXFCIlgb5R9IL9yMKP-ynpe41Bk2TQEo1SP2cw3ym55cnumVhancb4HJH-2syyz1ckUbSAawZ9AUfOyE2-9B8jpRc8-j88pXsjL62F5v8hjpDc4mLra1HhtJJl_E1pFrAosrd1WD2kRDnFSQPq66QFujThds2wQmoGKUX9PfamuRPda_tnqsIu5wTsr2551Yi0YyI",
+        "location": "Atacama, Chile",
+        "season": "Winter 2024",
+        "title": "Observing the Void",
+        "description": "Stargazing from the driest place on Earth — where atmospheric noise is at its theoretical minimum.",
+        "aspect": "aspect-video"
+      }
+    ]
+  }
+}

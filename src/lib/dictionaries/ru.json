@@ -1,0 +1,443 @@
+{
+  "navigation": {
+    "home": "Главная",
+    "experience": "Опыт",
+    "projects": "Проекты",
+    "publications": "Публикации",
+    "achievements": "Достижения",
+    "blog": "Блог",
+    "qa": "Вопросы",
+    "connect": "Связаться"
+  },
+  "footer": {
+    "tagline": "AI Инженер и Исследователь",
+    "copyright": "© {year} Ба-Хоанг Тран."
+  },
+  "common": {
+    "multimodal": "Мультимодальность",
+    "research": "Исследования",
+    "bringingSoon": "Скоро появится"
+  },
+  "home": {
+    "hero": {
+      "role": "AI Инженер и Исследователь",
+      "title": "Я Ба-Хоанг Тран.",
+      "subtitle": "Развитие мультимодального интеллекта.",
+      "description": [
+        "AI Инженер в VinSmart Future (Речевые технологии и AI-агенты)",
+        "Будущий студент M2 в Université Paris-Saclay. Бакалавр компьютерных наук (с отличием), VNU-UET.",
+        "Специализируюсь на агентных системах, GraphRAG и On-Device SLM",
+        "Исследую мультимодальное обучение для ИИ в здравоохранении"
+      ],
+      "viewExperience": "Посмотреть опыт",
+      "getCV": "Скачать CV",
+      "projects": "Проекты",
+      "alt": "Ба-Хоанг Тран - AI Инженер и Исследователь"
+    },
+    "publications": {
+      "label": "Избранные работы",
+      "title": "Избранные публикации",
+      "viewAll": "Все статьи"
+    },
+    "experience": {
+      "label": "Профессиональный путь",
+      "title": "Опыт работы",
+      "viewAll": "Полный путь"
+    },
+    "achievements": {
+      "label": "Признание и влияние",
+      "title": "Награды и достижения",
+      "viewAll": "Все достижения"
+    },
+    "projects": {
+      "label": "Личные исследования",
+      "title": "Личные проекты",
+      "viewAll": "Все проекты",
+      "viewGithub": "На GitHub"
+    },
+    "blog": {
+      "label": "Цифровой сад",
+      "title": "Статьи и идеи",
+      "description": "Размышления об архитектуре ИИ, исследовательских прорывах и пересечении технологий и человеческого опыта.",
+      "comingSoon": "Скоро"
+    },
+    "qa": {
+      "title": "Прямой запрос",
+      "description": "Задайте мне вопрос. Или свяжитесь со мной по электронной почте: hoangtb203@gmail.com"
+    }
+  },
+  "experience": {
+    "header": {
+      "label": "Карьера и образование",
+      "title": "Путь.",
+      "description": "Развитие ИИ через инженерное мастерство и академические исследования, от мультимодальных биомедицинских наборов данных до агентных систем на устройствах."
+    },
+    "work": {
+      "title": "Опыт работы",
+      "achievementsLabel": "Ключевые достижения",
+      "items": [
+        {
+          "company": "Vin Smart Future",
+          "logo": "/companies/vin-logo.svg",
+          "logoAlt": "Логотип Vin",
+          "role": "AI Инженер",
+          "period": "Фев 2026 — Настоящее время",
+          "description": "Компоненты речевых технологий и AI-агентов для виртуального помощника VinFast.",
+          "achievements": [
+            "Разработал оптимизацию производительности для взаимодействия с водителем в реальном времени.",
+            "Проектирую оффлайн-развертывание SLM на автомобильном оборудовании на базе Qualcomm.",
+            "Оптимизирую дизайн системы для обеспечения высокой надежности без зависимости от облака."
+          ],
+          "tags": ["Speech AI", "SLM", "On-Device", "VinFast"]
+        },
+        {
+          "company": "Sun* Inc.",
+          "logo": "/companies/sun-asterisk.png",
+          "logoAlt": "Логотип Sun Asterisk",
+          "role": "AI Инженер",
+          "period": "Июнь 2025 — Январь 2026",
+          "description": "Автоматизация инсайтов на базе ИИ и проект Sun* Assistant.",
+          "achievements": [
+            "Разработал высокопроизводительный конвейер инференса (Whisper + vLLM), сократив время обработки на 65%.",
+            "Спроектировал систему индексации GraphRAG с использованием продвинутых механизмов парсинга и разбиения на фрагменты.",
+            "Внедрил AI-агентов с постоянной памятью, что сократило количество запросов сотрудников на 70%."
+          ],
+          "tags": ["GraphRAG", "vLLM", "Triton", "Agentic Systems"]
+        },
+        {
+          "company": "DS&KTLab - VNU UET",
+          "logo": "/companies/uet.png",
+          "logoAlt": "Логотип Университета VNU-UET",
+          "role": "Студент-исследователь",
+          "period": "Фев 2023 — Июнь 2025",
+          "description": "Руководство исследованиями по извлечению межлекарственных взаимодействий с использованием мультимодальных подходов.",
+          "achievements": [
+            "Автор 3 рецензируемых публикаций, включая ACM Multimedia (A*) и JBI (Q1).",
+            "Создал новый мультимодальный биомедицинский набор данных (MUDI).",
+            "Награда за лучшую диссертацию от комитета по защите диссертаций (Оценка: 9.7/10)."
+          ],
+          "tags": ["Multimodal AI", "Biomedical NLP", "Research", "ACM MM"]
+        },
+        {
+          "company": "Cinnamon AI",
+          "logo": "/companies/cinnamon.webp",
+          "logoAlt": "Логотип Cinnamon AI",
+          "role": "Стажер-исследователь ИИ",
+          "period": "Июнь 2023 — Март 2024",
+          "description": "Надежное обнаружение структуры таблиц и извлечение клинических данных.",
+          "achievements": [
+            "Улучшил точность реконструкции таблиц на 27% для частично отсутствующих границ.",
+            "Донастроил модели для извлечения клинических данных из неструктурированных медицинских записей.",
+            "Сотрудничал в разработке практических решений ИИ для международных клиентов."
+          ],
+          "tags": ["Computer Vision", "Table Recognition", "Clinical AI"]
+        }
+      ]
+    },
+    "education": {
+      "title": "Образование",
+      "items": [
+        {
+          "school": "Université Paris-Saclay",
+          "degree": "Магистратура 2 в области данных, знаний и гибридного ИИ",
+          "period": "Сент 2026 - Июль 2027 (Поступление)",
+          "details": "Будущий студент. Принят в эту престижную программу Master 2 в Université Paris-Saclay."
+        },
+        {
+          "school": "Вьетнамский национальный университет - UET",
+          "degree": "Бакалавр компьютерных наук (с отличием)",
+          "period": "2021 - 2025",
+          "details": "Средний балл: 3.61/4. Лауреат премии за лучшую диссертацию."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "header": {
+      "label": "Портфолио проектов",
+      "title": "Избранные проекты.",
+      "description": "Подборка технических проектов, от агентных систем реального времени до специализированной оптимизации моделей и перевода."
+    },
+    "technicalFocus": "Технический фокус",
+    "viewSource": "Исходный код",
+    "items": [
+      {
+        "id": "voice-chat",
+        "title": "AI Голосовой чат-помощник",
+        "category": "LLM и агентные системы",
+        "period": "Янв 2026",
+        "description": "Разговорный ИИ с низкой задержкой, включающий синтез голоса в реальном времени и мультиагентные рабочие процессы с использованием LangGraph и MCP.",
+        "achievements": [
+          "Интегрировал Superlinked для высокоразмерных векторных эмбеддингов.",
+          "Разработал архитектуру многоходового диалога с постоянной памятью.",
+          "Оптимизировано для интерактивного отклика в реальном времени."
+        ],
+        "tech": ["LangGraph", "MCP", "Superlinked", "Python"],
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByCe2y1APIjcA5woQcQBjyc1HNQwhjwbNjDpZNgma0umEFwoPk63ocCQM7dP-LQ8zNjZ9euvctLC7B5SkZyR55a22WObmybY2c4GsZ8jn38kksXF2fF4UYy7YvDMqZgQ6SViizIqFcIHCoUTVMpPO-hRoMzrLYzUj_xn7YqAvkH8CTP69Wr-11vyIPR-W1mShQRh2xyfB7ZQCFkxiU-rT6sBmFv7w7s2H_H8zkuILS4zyX9MPgNrrtNVAKOazXE9H80dhs0uVSKJY",
+        "github": "https://github.com/hoangbros03/voice-chat-demo"
+      },
+      {
+        "id": "translation-model",
+        "title": "Модель перевода Лаос-Вьетнам",
+        "category": "NLP",
+        "period": "Дек 2023",
+        "description": "Высокоточная система перевода, улучшившая показатель BLEU на 36% по сравнению с базовым уровнем. Награждена как лучший проект курса NLP.",
+        "achievements": [
+          "Адаптировал архитектуру Transformer для пар языков с ограниченными ресурсами.",
+          "Собрал и обработал открытые данные для расширения обучающего корпуса.",
+          "Внедрил продвинутые стратегии декодирования для улучшения качества перевода."
+        ],
+        "tech": ["PyTorch", "Transformers", "BLEU", "NLP"],
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA8DdKa62FjJqGfIqCB6xO_1oEtCVH3j9u1BEGBZL63JyvGxXarAL-SvenDr5DdR7HaWuzYkwspGSqPz3AhpRJMpHwgodQnMQWeTxRKovtgU6H4Y0vfKSf12s7kAJyblkCgNuKEuMIRN7a3RdkCnVLJ69YnMatkVuv4HUQ9Xw7yITHUZMiT6r6G9bK5PKWZaNKyDjs_-NCCCScGKavC9dt6V0p9aPn-016EM99gRkCX3e_0LkQeBEYTgPOkcaa7RgCjd7gsH1uVhns",
+        "github": "https://github.com/hoangbros03/Translation_Model_10"
+      },
+      {
+        "id": "gan-implement",
+        "title": "Генерация изображений с помощью GAN",
+        "category": "Generative AI",
+        "period": "Ноя 2023",
+        "description": "Реализовал GAN с нуля с использованием продвинутых методов обучения, достигнув ускорения сходимости на 20%.",
+        "achievements": [
+          "Сократил количество эпох обучения на 20% благодаря продвинутой оптимизации.",
+          "Достиг значения FID 0.0285.",
+          "Провел тщательные исследования по удалению компонентов архитектуры."
+        ],
+        "tech": ["PyTorch", "GANs", "Computer Vision"],
+        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop",
+        "github": "https://github.com/hoangbros03/GAN-implement"
+      },
+      {
+        "id": "model-compression",
+        "title": "Сжатие моделей",
+        "category": "Эффективность",
+        "period": "Июль 2023",
+        "description": "Уменьшил размер модели VGG16 на 76% с минимальным увеличением ошибки, используя квантование и прунинг.",
+        "achievements": [
+          "Достиг значительного уменьшения размера для развертывания на периферии.",
+          "Поддерживал ошибку top-5 в пределах 0.0586.",
+          "Оценил производительность при различных коэффициентах прунинга."
+        ],
+        "tech": ["PyTorch", "Quantization", "Pruning", "Distillation"],
+        "image": "https://images.unsplash.com/photo-1639322537228-f710d846310a?q=80&w=1932&auto=format&fit=crop",
+        "github": "https://github.com/hoangbros03/pytorch-cifar100"
+      }
+    ]
+  },
+  "publications": {
+    "header": {
+      "label": "Научный архив",
+      "title": "Публикации и исследования",
+      "description": "Исследование пересечения мультимодального интеллекта и биологических систем с академической строгостью."
+    },
+    "items": [
+      {
+        "year": "2025",
+        "conference": "ACM Multimedia (A*)",
+        "conferenceVariant": "primary",
+        "typeLabel": "Конференционная статья",
+        "publisher": "Association for Computing Machinery",
+        "title": "MUDI: A Multimodal Biomedical Dataset for Understanding Pharmacodynamic Drug-Drug Interactions",
+        "description": "Создание нового мультимодального биомедицинского набора данных (MUDI) и предложение различных стратегий мультимодального слияния для извлечения межлекарственных взаимодействий. Представлено на 33-й международной конференции ACM по мультимедиа.",
+        "links": [
+          { "label": "arXiv", "icon": "description", "href": "https://arxiv.org/abs/2506.01478" },
+          { "label": "Статья", "icon": "article", "href": "https://arxiv.org/abs/2506.01478" }
+        ],
+        "image": {
+          "src": "/publishers/acm.png",
+          "alt": "Логотип издателя ACM"
+        }
+      },
+      {
+        "year": "2025",
+        "conference": "JBI (Q1)",
+        "conferenceVariant": "primary",
+        "typeLabel": "Журнальная статья",
+        "publisher": "Elsevier",
+        "title": "Comprehensive Analysis of Multimodal Drug-Drug Interaction Extraction Using Diverse Fusion Strategies",
+        "description": "Опубликовано в Journal of Biomedical Informatics. Глубокое погружение в методы слияния на основе внимания и мультимодальности для идентификации сложных фармакологических взаимодействий.",
+        "links": [
+          { "label": "DOI", "icon": "article", "href": "https://doi.org/10.1016/j.jbi.2025.104874" }
+        ],
+        "image": {
+          "src": "/publishers/elsevier.svg",
+          "alt": "Логотип издателя Elsevier"
+        }
+      },
+      {
+        "year": "2024",
+        "conference": "BME 2024",
+        "conferenceVariant": "default",
+        "typeLabel": "Конференционная статья",
+        "publisher": "Springer Nature",
+        "title": "Improving Drug-Drug Interaction Extraction from Biomedical Literature using Deep Multimodal Fusion",
+        "description": "Устный доклад на BME 2024. Сосредоточен на использовании глубокого мультимодального слияния для повышения точности извлечения DDI из неструктурированного научного текста.",
+        "links": [{ "label": "DOI", "icon": "description", "href": "https://doi.org/10.1007/978-3-031-90194-2_36" }],
+        "image": {
+          "src": "/publishers/springer-nature.svg",
+          "alt": "Логотип издателя Springer Nature"
+        }
+      }
+    ]
+  },
+  "achievements": {
+    "header": {
+      "label": "Признание и влияние",
+      "title": "Награды и лидерство.",
+      "description": "Академические успехи, победы в глобальных хакатонах и лидерство в техническом сообществе."
+    },
+    "honors": {
+      "title": "Основные награды",
+      "items": [
+        {
+          "title": "Учебная стипендия DAAD для дисциплин STEM",
+          "org": "Немецкая служба академических обменов (DAAD)",
+          "date": "Апрель 2026",
+          "description": "Полная стипендия магистра для обучения в аспирантуре в Германии. Присуждается ограниченному числу перспективных студентов в области STEM.",
+          "highlight": "Полная стипендия"
+        },
+        {
+          "title": "Конференция по научным исследованиям университетского уровня",
+          "org": "Вьетнамский национальный университет",
+          "date": "Май 2025",
+          "description": "Присуждена вторая премия среди лучших исследовательских проектов всех факультетов за работу по мультимодальному прогнозированию межлекарственных взаимодействий.",
+          "highlight": "Вторая премия"
+        },
+        {
+          "title": "International Quant Championship",
+          "org": "WorldQuant",
+          "date": "Июль 2024",
+          "description": "Заняла второе место среди университетских команд во всем мире. Разработал инновационные стратегии финансового моделирования, демонстрирующие высокую прогностическую силу.",
+          "highlight": "Топ-2 команда в мире"
+        },
+        {
+          "title": "Стипендия Back2school KMS",
+          "org": "KMS Technology",
+          "date": "Октябрь 2024",
+          "description": "Выбран как выдающийся студент в ходе конкурсного отбора с уровнем приема 3.8%.",
+          "highlight": "Топ 3.8%"
+        },
+        {
+          "title": "VPBank Hackathon Technology",
+          "org": "VPBank",
+          "date": "Май 2024",
+          "description": "Топ-5 в конкурсе приложений для поиска талантов с использованием RAG и индивидуальных конвейеров LLM.",
+          "highlight": "Топ-5"
+        }
+      ]
+    },
+    "leadership": {
+      "title": "Лидерство и активность",
+      "items": [
+        {
+          "role": "Тимлид / AI Инженер",
+          "event": "Swin Hackathon 2024",
+          "date": "Сент 2024",
+          "description": "Руководил командой по разработке системы генерации документов и слайдов из концепций, сократив объем работы на 98%. Финиш в топ-10."
+        },
+        {
+          "role": "Лектор и наставник команды",
+          "event": "FACT Program (SUTD & VNU-UET)",
+          "date": "Июль 2023",
+          "description": "Читал лекции по концепциям глубокого обучения студентам первого курса и руководил проектами по оценке влажности почвы."
+        },
+        {
+          "role": "Организатор / Медиа-лид",
+          "event": "Презентационный клуб UET",
+          "date": "2021 - 2024",
+          "description": "Управлял кампаниями в социальных сетях и организовывал масштабные студенческие мероприятия, ежегодно увеличивая охват на 10%."
+        },
+        {
+          "role": "Делегат",
+          "event": "Национальная конференция по науке и инновациям",
+          "date": "Янв 2025",
+          "description": "Выбран в качестве одного из 40 лучших студентов для участия в этой конференции национального уровня по цифровой трансформации."
+        }
+      ]
+    }
+  },
+  "blog": {
+    "header": {
+      "label": "Письменный стол",
+      "title": "Блог скоро появится.",
+      "description": "Я готовлю эссе и технические заметки об исследованиях, разработке и реальных системах ИИ. Первые посты еще не опубликованы."
+    }
+  },
+  "qa": {
+    "header": {
+      "title": "Q&A — Спрашивайте что угодно",
+      "subtitle": "Спрашивайте что угодно",
+      "description": "Публичная лента анонимных вопросов и ваших опубликованных ответов. Узнайте больше о технических вопросах, карьере и ИИ."
+    }
+  },
+  "forms": {
+    "inquiry": {
+      "successTitle": "Запрос отправлен",
+      "successMessage": "Ваш запрос был отправлен на мою почту.",
+      "label": "СИСТЕМНЫЙ ПРОМПТ / ВОПРОС",
+      "placeholder": "Объясните роль масок внимания в архитектурах разреженных трансформеров...",
+      "errorMessage": "Не удалось отправить. Пожалуйста, попробуйте еще раз или свяжитесь со мной напрямую.",
+      "loading": "Передача...",
+      "submit": "Выполнить запрос"
+    },
+    "ask": {
+      "successTitle": "Вопрос поставлен в очередь",
+      "successMessage": "Ваш анонимный запрос был отправлен на мою электронную почту для рассмотрения.",
+      "label": "СИСТЕМНЫЙ ПРОМПТ / ВОПРОС",
+      "placeholder": "Каково ваше мнение о будущем оркестровки автономных агентов?",
+      "errorMessage": "Ошибка передачи. Пожалуйста, попробуйте еще раз.",
+      "anonymousLabel": "ЛИЧНОСТЬ ЗАЩИЩЕНА (АНОНИМНО)",
+      "loading": "В очереди...",
+      "submit": "Отправить вопрос"
+    }
+  },
+  "travel": {
+    "header": {
+      "title": "Журнал путешествий",
+      "description": "Визуальная сетка моих поездок с поддержкой многоязычных файлов markdown."
+    },
+    "readLog": "ЧИТАТЬ",
+    "discoverMore": "Узнать больше",
+    "items": [
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGTBmpOsBs80FgXyq9BipDu829ThXCdCokZIwKHrj8pu4thShUAXyLOfkHHZkK4viag_aGAPP5ML4wgIS-34RIQwnGAdJuko2IrN23miR5e5Xucif4JDEnrKJ-AcT0kDsES_O4zREJsK-DwFn6rFgsEkvDcvkSHs6t-vnfm7rpaRUS9DprwNCLf90h92xVZVaYP4_bVBv_CGNOd0kIQ_dvooye_hBZLtOKOazaTVemAiHF4kB_xC7D6aTeJa3Aj9FgM9j-T_lhW7k",
+        "location": "Киото, Япония",
+        "season": "Осень 2024",
+        "title": "Синтез традиций и кремния",
+        "description": "Исследование пересечения древнего мастерства и современной технологической инфраструктуры в самом сердце культурной столицы Японии.",
+        "aspect": "aspect-[3/4]"
+      },
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBQjkfSuea5HlCHINXTtWD3FUYtFmYon3llpjRn22y897EJZ15mWncEbu79MNXPkb1Q5yWxF_ajxZeVHTSD3b1v5zxf67PwJ65cR_XtHcG51y8Y9bMD3lJcEKXFW-GWS38N7RMpLNu9IWgcpw3kWqjNjDs5ac8MHiIc0wDEbuqXjzoSOqETK16neXJJNC4DNom6orA-Zt_IPdnfpp4qStaFYaEXiW-PSkJ4Mt5qIPECcdaLLqGePQN3c8m7ZlNcUsuYhjYG8k-EAhE",
+        "location": "Швейцария",
+        "season": "Зима 2023",
+        "title": "Пиковая концентрация",
+        "description": "Изоляция шума. Ретрит для глубокой работы среди высокогорных ландшафтов Бернского Оберланда.",
+        "aspect": "aspect-video"
+      },
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDxTaCmPeO9Mf1zmogUPN7lwHVcOXQY4a4eL37VvJSYYJuzpU5fEt8ovDCj9c2FXCD8CJFf3okCMC8KHTqn-G9iv83YbcGhAQs0UQRPV113955RknnYeogehkHnRQVFvT3PhgOE1VxOjMP3zslhBYglK4_r5jGwFh7AxArCImC84PRbdYVPEQce-9K7nvNxl_D4gMutC7l4jE5JsNk_BI1ekTAwLF7VMsNx2FfVx5x75uitXdUhvHDt3fBhgt4Mf6rOVKHc6d10-vY",
+        "location": "Сан-Франциско",
+        "season": "Весна 2024",
+        "title": "Городские узлы",
+        "description": "Фотографическое исследование физической инфраструктуры, обеспечивающей бум генеративного ИИ.",
+        "aspect": "aspect-square"
+      },
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBWh3dUXUPwoIu7So0bdNET49T4o1AORnHCF1eMMan5arYAc_uMn5HrcS52t1QWNuG1DXWtd0YXn5kBNUASZr63M9a73rWNgpdtY3jxh6lyuYe9aWODpqIo9VX2ceyLFfER1NL4sC33v1goeqTTms1jmMKBjTJTcPrr5YknPG5VfV_dM0_xm19uVRYIEYbIVPv7z-ssNRfxE6_fXootKN5RcGQSzM9IOgte7NyXqkHYOdbir70vtDY9sJPN-n04e3E-VKUlUXgARg",
+        "location": "Дания",
+        "season": "Лето 2024",
+        "title": "Логика дизайна",
+        "description": "Систематическая эстетика и функциональный минимализм в скандинавском городском ландшафте.",
+        "aspect": "aspect-[4/5]"
+      },
+      {
+        "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuA0Trh8aPyp6w24b3sSiaS-x3n6PqbPliAHADPFdg0_4cM2M5XXMH631edQqtjgpAxl5T8zWQwXFCIlgb5R9IL9yMKP-ynpe41Bk2TQEo1SP2cw3ym55cnumVhancb4HJH-2syyz1ckUbSAawZ9AUfOyE2-9B8jpRc8-j88pXsjL62F5v8hjpDc4mLra1HhtJJl_E1pFrAosrd1WD2kRDnFSQPq66QFujThds2wQmoGKUX9PfamuRPda_tnqsIu5wTsr2551Yi0YyI",
+        "location": "Атакама, Чили",
+        "season": "Зима 2024",
+        "title": "Наблюдение пустоты",
+        "description": "Наблюдение за звездами из самого сухого места на Земле — там, где атмосферный шум теоретически минимален.",
+        "aspect": "aspect-video"
+      }
+    ]
+  }
+}

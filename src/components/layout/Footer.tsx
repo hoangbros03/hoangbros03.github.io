@@ -1,5 +1,18 @@
-export function Footer() {
+import { Locale } from "@/lib/get-dictionary";
+
+export function Footer({ lang }: { lang: Locale }) {
   const year = new Date().getFullYear();
+
+  const labels = lang === "ru" ? {
+    tagline: "AI Инженер и Исследователь",
+    copyright: `© ${year} Ба-Хоанг Тран.`
+  } : lang === "de" ? {
+    tagline: "KI-Ingenieur & Forscher",
+    copyright: `© ${year} Ba-Hoang Tran.`
+  } : {
+    tagline: "AI Engineer & Researcher",
+    copyright: `© ${year} Ba-Hoang Tran.`
+  };
 
   return (
     <footer className="bg-slate-100 w-full py-12 px-8 mt-20">
@@ -10,7 +23,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="font-[family-name:var(--font-manrope)] text-sm tracking-widest uppercase text-sky-600">
-          © {year} Ba-Hoang Tran. AI Engineer & Researcher.
+          {labels.copyright} {labels.tagline}
         </p>
 
         {/* Links */}
